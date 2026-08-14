@@ -1,0 +1,125 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = '함세준의 책', description = '클로드코드 활용 시리즈의 소개와 실습 자료 다운로드' } = Astro.props;
+const nav = [
+  { href: '/', label: '홈' },
+  { href: '/downloads/', label: '자료실' },
+  { href: '/updates/', label: '업데이트' },
+  { href: '/about/', label: '소개' },
+];
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="brand" href="/">함세준<span class="dot">의 책</span></a>
+        <nav>
+          {nav.map((n) => (
+            <a href={n.href} class={path === n.href || (n.href !== '/' && path.startsWith(n.href)) ? 'on' : ''}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer>
+      <div class="wrap">
+        <p>© 2026 함세준 · 실습 자료는 전부 가상 데이터입니다 · 자료 갱신 소식은 <a href="/updates/">업데이트</a>에서</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: #b03a2a;
+    --accent-soft: #f6e3dd;
+    --bg: #faf8f3;
+    --card: #ffffff;
+    --line: #e9e2d6;
+    --ink: #222;
+    --sub: #666;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .brand { font-weight: 800; font-size: 18px; color: var(--ink); text-decoration: none; }
+  .brand .dot { color: var(--accent); }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: var(--sub); text-decoration: none; font-size: 14.5px; font-weight: 600;
+    padding: 6px 10px; border-radius: 8px;
+  }
+  nav a.on, nav a:hover { color: var(--accent); background: var(--accent-soft); }
+  main { padding: 40px 20px 64px; min-height: 60vh; }
+  footer { border-top: 1px solid var(--line); background: #fff; }
+  footer p { padding: 22px 0; font-size: 13px; color: var(--sub); }
+  footer a { color: var(--accent); }
+
+  h1 { font-size: 28px; line-height: 1.35; margin-bottom: 10px; }
+  h2 { font-size: 20px; margin: 34px 0 12px; }
+  p.lead { color: var(--sub); font-size: 16.5px; }
+  .accent { color: var(--accent); }
+
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 24px; margin: 18px 0; display: block; text-decoration: none; color: inherit;
+  }
+  a.card:hover { border-color: var(--accent); }
+  .card h3 { font-size: 18px; margin-bottom: 4px; }
+  .card .tag {
+    display: inline-block; background: var(--accent-soft); color: var(--accent);
+    border-radius: 999px; font-size: 12.5px; font-weight: 700; padding: 2px 11px; margin-bottom: 10px;
+  }
+  .card p { color: var(--sub); font-size: 15px; }
+
+  .dl {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 15px 18px; margin: 10px 0; text-decoration: none; color: inherit;
+  }
+  .dl:hover { border-color: var(--accent); }
+  .dl b { font-size: 15.5px; }
+  .dl .note { display: block; font-size: 13px; color: var(--sub); margin-top: 2px; }
+  .dl .btn {
+    flex: none; background: var(--accent); color: #fff; border-radius: 10px;
+    font-size: 14px; font-weight: 700; padding: 9px 16px; white-space: nowrap;
+  }
+  .dl .size { flex: none; font-size: 12.5px; color: var(--sub); }
+
+  .updates li { list-style: none; border-bottom: 1px solid var(--line); padding: 13px 2px; }
+  .updates time { color: var(--sub); font-size: 13px; margin-right: 10px; }
+  .updates a { color: var(--ink); text-decoration: none; font-weight: 600; }
+  .updates a:hover { color: var(--accent); }
+
+  .prose p { margin: 0.7em 0; }
+  .prose ul, .prose ol { margin: 0.7em 0 0.7em 1.3em; }
+  .prose strong { color: var(--ink); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 23px; }
+    .dl { flex-wrap: wrap; }
+    .dl .btn { width: 100%; text-align: center; }
+  }
+</style>

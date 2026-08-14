@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const books = (await getCollection('books')).sort((a, b) => a.data.order - b.data.order);
+---
+<Base>
+  <h1>일은 <span class="accent">에이전트</span>에게,<br />정의는 우리에게.</h1>
+  <p class="lead">
+    현직 고등학교 물리교사가 쓰는 클로드코드 활용 시리즈.
+    책의 모든 실습 자료를 이곳에서 내려받을 수 있습니다.
+  </p>
+
+  <h2>시리즈</h2>
+  {books.map((b) => (
+    <a class="card" href={`/books/${b.data.slug}/`}>
+      <span class="tag">{b.data.status}</span>
+      <h3>{b.data.title}</h3>
+      <p>{b.data.tagline}</p>
+    </a>
+  ))}
+
+  <h2>바로 가기</h2>
+  <a class="dl" href="/downloads/">
+    <span><b>자료실</b><span class="note">전체 다운로드를 한 페이지에서 (강의장에서는 이 주소 하나면 됩니다)</span></span>
+    <span class="btn">열기</span>
+  </a>
+</Base>

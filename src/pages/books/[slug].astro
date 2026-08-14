@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.map((book) => ({ params: { slug: book.data.slug }, props: { book } }));
+}
+
+const { book } = Astro.props;
+const { Content } = await render(book);
+---
+<Base title={`${book.data.title} — 함세준의 책`} description={book.data.tagline}>
+  <span class="tag" style="display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:999px;font-size:13px;font-weight:700;padding:3px 12px;">{book.data.status}</span>
+  <h1 style="margin-top:10px">{book.data.title}</h1>
+  <p class="lead">{book.data.tagline}</p>
+
+  {book.data.store.length > 0 && (
+    <>
+      <h2>구매</h2>
+      {book.data.store.map((s) => (
+        <a class="dl" href={s.url}><b>{s.name}</b><span class="btn">이동</span></a>
+      ))}
+    </>
+  )}
+
+  <h2>실습 자료 다운로드</h2>
+  {book.data.downloads.map((d) => (
+    <a class="dl" href={d.file} download>
+      <span><b>{d.label}</b>{d.note && <span class="note">{d.note}</span>}</span>
+      {d.size && <span class="size">{d.size}</span>}
+      <span class="btn">다운로드</span>
+    </a>
+  ))}
+  <p style="font-size:13.5px;color:var(--sub)">
+    자료가 갱신되면 <a href="/updates/" style="color:var(--accent)">업데이트</a>에 공지합니다. 주소는 바뀌지 않으니 즐겨찾기해 두세요. (갱신일: {book.data.updated})
+  </p>
+
+  <h2>책 소개</h2>
+  <div class="prose"><Content /></div>
+</Base>
