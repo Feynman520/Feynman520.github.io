@@ -10,32 +10,166 @@ export async function getStaticPaths() {
 const { book } = Astro.props;
 const { Content } = await render(book);
 ---
+
 <Base title={`${book.data.title} — 함세준의 책`} description={book.data.tagline}>
-  <span class="tag" style="display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:999px;font-size:13px;font-weight:700;padding:3px 12px;">{book.data.status}</span>
-  <h1 style="margin-top:10px">{book.data.title}</h1>
-  <p class="lead">{book.data.tagline}</p>
+  <section class="book-hero">
+    <div class="shell book-hero-grid">
+      <div class="compact-book" aria-hidden="true">
+        <div class="compact-spine"></div>
+        <div class="compact-cover">
+          <span>WORK WITH AI</span>
+          <strong>교사를 위한<br />클로드코드</strong>
+          <i></i>
+          <small>교사의 저녁을 돌려주는<br />38개의 실전 레시피</small>
+          <b>함세준 지음</b>
+        </div>
+      </div>
+
+      <div class="book-hero-copy">
+        <a class="breadcrumb" href="/">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12.5 4-6 6 6 6" /></svg>
+          전체 도서
+        </a>
+        <span class="status">{book.data.status}</span>
+        <h1>{book.data.title}</h1>
+        <p class="lead">{book.data.tagline}</p>
+        <div class="button-row">
+          <a class="button primary" href="#book-downloads">
+            실습 자료 받기
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" /></svg>
+          </a>
+          {book.data.store.length > 0 && (
+            <a class="button secondary" href="#book-stores">구매처 보기</a>
+          )}
+        </div>
+        <dl class="book-meta">
+          <div><dt>저자</dt><dd>함세준</dd></div>
+          <div><dt>구성</dt><dd>38개 실전 레시피</dd></div>
+          <div><dt>자료 갱신</dt><dd>{book.data.updated}</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" id="book-downloads">
+    <div class="shell content-grid">
+      <div class="content-heading">
+        <span class="section-label">DOWNLOADS</span>
+        <h2>책과 함께 쓰는<br />실습 자료</h2>
+        <p>로그인 없이 바로 받을 수 있습니다. 자료가 바뀌어도 이 주소는 유지됩니다.</p>
+      </div>
+      <div class="download-list">
+        {book.data.downloads.map((item) => (
+          <a class="download-item" href={item.file} download>
+            <span class="file-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3.5h7l4 4v13H7v-17Zm7 0v4h4M12 10v6m0 0 2.5-2.5M12 16l-2.5-2.5" /></svg>
+            </span>
+            <span class="download-copy">
+              <strong>{item.label}</strong>
+              {item.note && <span>{item.note}</span>}
+            </span>
+            {item.size && <span class="file-size">{item.size}</span>}
+            <span class="download-action">
+              다운로드
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" /></svg>
+            </span>
+          </a>
+        ))}
+        <p class="update-note">
+          변경 내역은 <a href="/updates/">업데이트</a>에서 확인할 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </section>
 
   {book.data.store.length > 0 && (
-    <>
-      <h2>구매</h2>
-      {book.data.store.map((s) => (
-        <a class="dl" href={s.url}><b>{s.name}</b><span class="btn">이동</span></a>
-      ))}
-    </>
+    <section class="page-section" id="book-stores">
+      <div class="shell content-grid">
+        <div class="content-heading"><span class="section-label">STORES</span><h2>구매처</h2></div>
+        <div class="store-list">
+          {book.data.store.map((store) => (
+            <a class="store-item" href={store.url}>
+              <strong>{store.name}</strong>
+              <span>이동 <b aria-hidden="true">↗</b></span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   )}
 
-  <h2>실습 자료 다운로드</h2>
-  {book.data.downloads.map((d) => (
-    <a class="dl" href={d.file} download>
-      <span><b>{d.label}</b>{d.note && <span class="note">{d.note}</span>}</span>
-      {d.size && <span class="size">{d.size}</span>}
-      <span class="btn">다운로드</span>
-    </a>
-  ))}
-  <p style="font-size:13.5px;color:var(--sub)">
-    자료가 갱신되면 <a href="/updates/" style="color:var(--accent)">업데이트</a>에 공지합니다. 주소는 바뀌지 않으니 즐겨찾기해 두세요. (갱신일: {book.data.updated})
-  </p>
-
-  <h2>책 소개</h2>
-  <div class="prose"><Content /></div>
+  <section class="page-section book-story">
+    <div class="shell content-grid">
+      <div class="content-heading">
+        <span class="section-label">ABOUT THE BOOK</span>
+        <h2>이 책이 시작된<br />자리</h2>
+      </div>
+      <article class="prose story-prose"><Content /></article>
+    </div>
+  </section>
 </Base>
+
+<style>
+  .book-hero { padding: 78px 0 90px; border-bottom: 1px solid var(--line); }
+  .book-hero-grid { display: grid; grid-template-columns: 350px minmax(0, 1fr); align-items: center; gap: 96px; }
+  .compact-book { display: flex; width: 290px; height: 392px; margin: 0 auto; filter: drop-shadow(22px 28px 30px rgba(25, 40, 91, .2)); transform: rotate(-2deg); }
+  .compact-spine { width: 28px; border-radius: 9px 0 0 9px; background: linear-gradient(90deg, #142d89, #284bd2); box-shadow: inset -4px 0 7px rgba(0,0,0,.16); }
+  .compact-cover { position: relative; display: flex; flex: 1; flex-direction: column; padding: 40px 32px 30px; border-radius: 0 10px 10px 0; color: #fff; background: linear-gradient(150deg, #3157e5, #1c3bb4 62%, #142d89); overflow: hidden; }
+  .compact-cover::after { position: absolute; right: -70px; bottom: -28px; width: 250px; height: 250px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; content: ''; box-shadow: 0 0 0 44px rgba(255,255,255,.04), 0 0 0 88px rgba(255,255,255,.03); }
+  .compact-cover span { position: relative; font-size: 10px; font-weight: 750; letter-spacing: .16em; opacity: .7; }
+  .compact-cover strong { position: relative; margin-top: 33px; font-size: 31px; line-height: 1.28; letter-spacing: -.055em; }
+  .compact-cover i { position: relative; width: 32px; height: 2px; margin: 24px 0 18px; background: rgba(255,255,255,.72); }
+  .compact-cover small { position: relative; font-size: 10.5px; line-height: 1.7; opacity: .78; }
+  .compact-cover b { position: relative; z-index: 1; margin-top: auto; font-size: 11px; }
+  .book-hero-copy { max-width: 700px; }
+  .breadcrumb { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 32px; color: var(--muted); font-size: 13px; font-weight: 650; text-decoration: none; }
+  .breadcrumb:hover { color: var(--brand); }
+  .breadcrumb svg { width: 16px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+  .book-hero-copy h1 { margin-top: 18px; font-size: clamp(2.75rem, 5vw, 4.5rem); }
+  .book-meta { display: flex; gap: 0; margin: 48px 0 0; }
+  .book-meta div { min-width: 140px; padding-right: 28px; }
+  .book-meta div + div { padding-left: 28px; border-left: 1px solid var(--line-strong); }
+  .book-meta dt { color: var(--muted); font-size: 11.5px; font-weight: 700; }
+  .book-meta dd { margin: 4px 0 0; color: var(--ink); font-size: 13.5px; font-weight: 750; }
+  .content-grid { display: grid; grid-template-columns: minmax(250px, .48fr) minmax(0, 1fr); align-items: start; gap: 90px; }
+  .content-heading { position: sticky; top: 110px; }
+  .content-heading h2 { margin-bottom: 16px; }
+  .content-heading p { margin: 0; color: var(--muted); font-size: 14px; }
+  .update-note { margin: 16px 4px 0; color: var(--muted); font-size: 12.5px; }
+  .update-note a { color: var(--brand); font-weight: 700; text-underline-offset: 3px; }
+  .book-story { border-top: 1px solid var(--line); background: rgba(255,255,255,.48); }
+  .story-prose { max-width: 750px; }
+  .store-list { display: grid; gap: 12px; }
+  .store-item { display: flex; justify-content: space-between; padding: 20px; border: 1px solid var(--line); border-radius: 15px; background: #fff; text-decoration: none; }
+  .store-item span { color: var(--brand); font-size: 13px; font-weight: 800; }
+
+  @media (max-width: 900px) {
+    .book-hero-grid { grid-template-columns: 260px minmax(0, 1fr); gap: 54px; }
+    .compact-book { width: 238px; height: 322px; }
+    .compact-spine { width: 23px; }
+    .compact-cover { padding: 30px 24px 23px; }
+    .compact-cover strong { margin-top: 26px; font-size: 25px; }
+    .content-grid { grid-template-columns: 1fr; gap: 34px; }
+    .content-heading { position: static; }
+    .content-heading h2 br { display: none; }
+  }
+
+  @media (max-width: 700px) {
+    .book-hero { padding: 50px 0 64px; }
+    .book-hero-grid { grid-template-columns: 1fr; gap: 52px; }
+    .compact-book { grid-row: 2; }
+    .breadcrumb { margin-bottom: 24px; }
+    .book-hero-copy h1 { font-size: 2.55rem; }
+    .book-meta { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .book-meta div { min-width: 0; padding-right: 13px; }
+    .book-meta div + div { padding-left: 13px; }
+    .book-meta dd { line-height: 1.4; }
+  }
+
+  @media (max-width: 420px) {
+    .book-meta { grid-template-columns: 1fr; gap: 11px; }
+    .book-meta div, .book-meta div + div { padding: 0; border-left: 0; }
+    .book-meta div { display: flex; justify-content: space-between; padding-bottom: 9px; border-bottom: 1px solid var(--line); }
+    .book-meta dd { margin: 0; }
+  }
+</style>
