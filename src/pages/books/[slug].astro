@@ -17,16 +17,16 @@ const { Content } = await render(book);
       <div class="compact-book" aria-hidden="true">
         <div class="compact-spine"></div>
         <div class="compact-cover">
-          <img src="/covers/teacher.jpg" alt="" />
+          <img src={book.data.cover} alt="" />
         </div>
       </div>
 
       <div class="book-hero-copy">
-        <a class="breadcrumb" href="/">
+        <a class="breadcrumb" href="/books/">
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12.5 4-6 6 6 6" /></svg>
           전체 도서
         </a>
-        <span class="status">{book.data.status}</span>
+        <span class:list={['status', book.data.status.includes('준비') && 'pending']}>{book.data.status}</span>
         <h1>{book.data.title}</h1>
         <p class="lead">{book.data.tagline}</p>
         <div class="button-row">
@@ -42,7 +42,7 @@ const { Content } = await render(book);
         </div>
         <dl class="book-meta">
           <div><dt>저자</dt><dd>함세준</dd></div>
-          <div><dt>구성</dt><dd>38개 실전 레시피</dd></div>
+          <div><dt>구성</dt><dd>{book.data.spec}</dd></div>
           <div><dt>자료 갱신</dt><dd>{book.data.updated}</dd></div>
         </dl>
       </div>
@@ -60,7 +60,7 @@ const { Content } = await render(book);
         {book.data.downloads.map((item) => (
           <a class="download-item" href={item.file} download>
             <span class="file-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M7 3.5h7l4 4v13H7v-17Zm7 0v4h4M12 10v6m0 0 2.5-2.5M12 16l-2.5-2.5" /></svg>
+              <span class="file-ext">{item.file.split('.').pop()?.toUpperCase()}</span>
             </span>
             <span class="download-copy">
               <strong>{item.label}</strong>

@@ -2,15 +2,21 @@
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title = '함세준의 책 — 교사를 위한 AI 실전서',
   description = '현직 고등학교 교사가 쓰는 AI 에이전트 실전서와 실습 자료',
+  image = '/og-default.png',
 } = Astro.props;
+
+const ogImage = new URL(image, Astro.site).href;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 
 const nav = [
   { href: '/', label: '홈' },
+  { href: '/books/', label: '책' },
   { href: '/downloads/', label: '자료실' },
   { href: '/updates/', label: '업데이트' },
   { href: '/about/', label: '저자 소개' },
@@ -30,7 +36,14 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" type="application/rss+xml" title="함세준의 책 — 업데이트" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
     <title>{title}</title>
   </head>
   <body>
@@ -148,11 +161,12 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 
   *, *::before, *::after { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 96px; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-family: 'Pretendard Variable', Pretendard, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
     font-size: 16px;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -322,6 +336,8 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     font-weight: 800;
   }
   .status::before { width: 6px; height: 6px; border-radius: 50%; content: ''; background: currentColor; box-shadow: 0 0 0 3px rgba(24, 121, 78, 0.12); }
+  .status.pending { color: #9a5b13; background: #fbf1e0; }
+  .status.pending::before { box-shadow: 0 0 0 3px rgba(154, 91, 19, 0.14); }
 
   .download-list { display: grid; gap: 12px; }
   .download-item {
@@ -350,6 +366,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     background: var(--brand-soft);
   }
   .file-icon svg { width: 23px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+  .file-icon .file-ext { font-size: 11.5px; font-weight: 850; letter-spacing: 0.03em; }
   .download-copy { min-width: 0; }
   .download-copy strong { display: block; color: var(--ink); font-size: 15.5px; letter-spacing: -0.02em; }
   .download-copy span { display: block; margin-top: 3px; color: var(--muted); font-size: 13.5px; line-height: 1.55; word-break: keep-all; overflow-wrap: break-word; }

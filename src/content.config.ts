@@ -9,6 +9,9 @@ const books = defineCollection({
     tagline: z.string(),
     status: z.string(),
     order: z.number().default(99),
+    cover: z.string(),
+    spec: z.string(),
+    recipes: z.number().default(0),
     store: z.array(z.object({ name: z.string(), url: z.string() })).default([]),
     downloads: z
       .array(

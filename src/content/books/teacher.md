@@ -4,6 +4,9 @@ slug: teacher
 tagline: 수업 준비부터 생활기록부까지, 교사의 저녁을 돌려주는 38개의 실전 레시피
 status: 출간 준비 중
 order: 1
+cover: /covers/teacher.jpg
+spec: 38개 실전 레시피
+recipes: 38
 store: []
 downloads:
   - label: 한국고등학교 데이터셋
