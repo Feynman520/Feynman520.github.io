@@ -17,11 +17,7 @@ const { Content } = await render(book);
       <div class="compact-book" aria-hidden="true">
         <div class="compact-spine"></div>
         <div class="compact-cover">
-          <span>WORK WITH AI</span>
-          <strong>교사를 위한<br />클로드코드</strong>
-          <i></i>
-          <small>교사의 저녁을 돌려주는<br />38개의 실전 레시피</small>
-          <b>함세준 지음</b>
+          <img src="/covers/teacher.jpg" alt="" />
         </div>
       </div>
 
@@ -113,14 +109,9 @@ const { Content } = await render(book);
   .book-hero { padding: 78px 0 90px; border-bottom: 1px solid var(--line); }
   .book-hero-grid { display: grid; grid-template-columns: 350px minmax(0, 1fr); align-items: center; gap: 96px; }
   .compact-book { display: flex; width: 290px; height: 392px; margin: 0 auto; filter: drop-shadow(22px 28px 30px rgba(25, 40, 91, .2)); transform: rotate(-2deg); }
-  .compact-spine { width: 28px; border-radius: 9px 0 0 9px; background: linear-gradient(90deg, #142d89, #284bd2); box-shadow: inset -4px 0 7px rgba(0,0,0,.16); }
-  .compact-cover { position: relative; display: flex; flex: 1; flex-direction: column; padding: 40px 32px 30px; border-radius: 0 10px 10px 0; color: #fff; background: linear-gradient(150deg, #3157e5, #1c3bb4 62%, #142d89); overflow: hidden; }
-  .compact-cover::after { position: absolute; right: -70px; bottom: -28px; width: 250px; height: 250px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; content: ''; box-shadow: 0 0 0 44px rgba(255,255,255,.04), 0 0 0 88px rgba(255,255,255,.03); }
-  .compact-cover span { position: relative; font-size: 10px; font-weight: 750; letter-spacing: .16em; opacity: .7; }
-  .compact-cover strong { position: relative; margin-top: 33px; font-size: 31px; line-height: 1.28; letter-spacing: -.055em; }
-  .compact-cover i { position: relative; width: 32px; height: 2px; margin: 24px 0 18px; background: rgba(255,255,255,.72); }
-  .compact-cover small { position: relative; font-size: 10.5px; line-height: 1.7; opacity: .78; }
-  .compact-cover b { position: relative; z-index: 1; margin-top: auto; font-size: 11px; }
+  .compact-spine { width: 28px; border-radius: 9px 0 0 9px; background: linear-gradient(90deg, #b68d00, #f5be00); box-shadow: inset -4px 0 7px rgba(0,0,0,.18); }
+  .compact-cover { position: relative; display: block; flex: 1; border-radius: 0 10px 10px 0; overflow: hidden; }
+  .compact-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .book-hero-copy { max-width: 700px; }
   .breadcrumb { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 32px; color: var(--muted); font-size: 13px; font-weight: 650; text-decoration: none; }
   .breadcrumb:hover { color: var(--brand); }
@@ -147,8 +138,6 @@ const { Content } = await render(book);
     .book-hero-grid { grid-template-columns: 260px minmax(0, 1fr); gap: 54px; }
     .compact-book { width: 238px; height: 322px; }
     .compact-spine { width: 23px; }
-    .compact-cover { padding: 30px 24px 23px; }
-    .compact-cover strong { margin-top: 26px; font-size: 25px; }
     .content-grid { grid-template-columns: 1fr; gap: 34px; }
     .content-heading { position: static; }
     .content-heading h2 br { display: none; }

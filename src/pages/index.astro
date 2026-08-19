@@ -43,11 +43,7 @@ const downloadCount = books.reduce((total, book) => total + book.data.downloads.
           <span class="book-object">
             <span class="book-spine" aria-hidden="true"></span>
             <span class="book-cover">
-              <span class="cover-kicker">WORK WITH AI</span>
-              <strong>교사를 위한<br />클로드코드</strong>
-              <span class="cover-rule"></span>
-              <span class="cover-copy">수업 준비부터 생활기록부까지<br />교사의 저녁을 돌려주는 38개의 실전 레시피</span>
-              <span class="cover-author">함세준 지음</span>
+              <img src="/covers/teacher.jpg" alt="『교사를 위한 클로드코드』 표지" loading="eager" />
             </span>
           </span>
           <span class="stage-caption">
@@ -174,14 +170,9 @@ const downloadCount = books.reduce((total, book) => total + book.data.downloads.
   .book-shadow { position: absolute; top: 348px; left: 50%; width: 245px; height: 42px; border-radius: 50%; background: rgba(26, 42, 95, .2); filter: blur(17px); transform: translateX(-44%) rotate(-5deg); }
   .book-object { position: absolute; top: 62px; left: 50%; display: flex; width: 250px; height: 330px; filter: drop-shadow(18px 22px 22px rgba(35, 48, 97, .22)); transform: translateX(-47%) rotate(4deg); transition: transform 280ms cubic-bezier(.2,.8,.2,1); }
   .book-stage:hover .book-object { transform: translateX(-47%) translateY(-8px) rotate(1.5deg); }
-  .book-spine { width: 24px; border-radius: 8px 0 0 8px; background: linear-gradient(90deg, #1733a0, #284bd2); box-shadow: inset -4px 0 7px rgba(0,0,0,.13); }
-  .book-cover { position: relative; display: flex; flex: 1; flex-direction: column; padding: 31px 27px 25px; border-radius: 0 9px 9px 0; color: #fff; background: linear-gradient(150deg, #3157e5 0%, #1c3bb4 62%, #142d89 100%); overflow: hidden; }
-  .book-cover::before { position: absolute; right: -58px; bottom: -20px; width: 210px; height: 210px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; content: ''; box-shadow: 0 0 0 36px rgba(255,255,255,.045), 0 0 0 72px rgba(255,255,255,.035); }
-  .cover-kicker { position: relative; font-size: 9px; font-weight: 750; letter-spacing: .17em; opacity: .72; }
-  .book-cover strong { position: relative; margin-top: 28px; font-size: 27px; line-height: 1.25; letter-spacing: -.055em; }
-  .cover-rule { position: relative; width: 28px; height: 2px; margin: 20px 0 16px; background: rgba(255,255,255,.72); }
-  .cover-copy { position: relative; font-size: 9.5px; line-height: 1.65; opacity: .78; }
-  .cover-author { position: relative; margin-top: auto; font-size: 10px; font-weight: 650; letter-spacing: .03em; }
+  .book-spine { width: 24px; border-radius: 8px 0 0 8px; background: linear-gradient(90deg, #b68d00, #f5be00); box-shadow: inset -4px 0 7px rgba(0,0,0,.18); }
+  .book-cover { position: relative; display: block; flex: 1; border-radius: 0 9px 9px 0; overflow: hidden; }
+  .book-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .stage-caption { position: absolute; right: 28px; bottom: 25px; left: 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--ink-soft); font-size: 13px; font-weight: 700; }
   .stage-caption .status { color: var(--brand); background: rgba(255,255,255,.74); backdrop-filter: blur(8px); }
 
