@@ -32,6 +32,10 @@ import Base from '../layouts/Base.astro';
           이메일로 문의하기
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5.5h14v9H3v-9Zm0 0 7 5 7-5" /></svg>
         </a>
+        <a href="https://www.threads.com/@research_ham" target="_blank" rel="noopener">
+          스레드 @research_ham
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13.1 10a3.1 3.1 0 1 1-.9-2.2m.9 2.2v1.3a1.55 1.55 0 0 0 3.1 0V10a6.2 6.2 0 1 0-2.4 4.9" /></svg>
+        </a>
       </aside>
 
       <div class="profile-story">
@@ -110,6 +114,7 @@ import Base from '../layouts/Base.astro';
   .profile-card dd { margin: 0; color: var(--ink-soft); font-weight: 650; }
   .profile-card > a { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; color: var(--brand); font-size: 13px; font-weight: 800; text-decoration: none; }
   .profile-card > a svg { width: 19px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+  .profile-card > a + a { margin-top: 13px; }
   .profile-story { max-width: 720px; }
   .profile-story > h2 { margin-bottom: 28px; }
   .value-list { margin-top: 48px; border-top: 1px solid var(--line-strong); }
