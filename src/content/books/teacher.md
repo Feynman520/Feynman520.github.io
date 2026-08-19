@@ -12,13 +12,13 @@ downloads:
     note: 명단·성적·서식 6종 등, 책의 예시를 100% 재현하는 가상 데이터
   - label: 클로드코드 세팅 가이드
     file: /files/teacher/setup-guide.md
-    size: 49KB
+    size: 70KB
     note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장)
   - label: 프롬프트 치트시트 (PDF)
     file: /files/teacher/cheatsheet.pdf
     size: 61KB
     note: 책의 복붙 프롬프트 38개를 한자리에 (부록 A)
-updated: "2026-08-15"
+updated: "2026-08-20"
 ---
 
 교사의 하루를 시간의 눈으로 해부하면, 판단은 5분인데 손은 한 시간입니다. 학습지의 방향은 점심시간에 이미 정해졌는데, 저녁은 표를 그리고 줄을 맞추는 데 갑니다.
