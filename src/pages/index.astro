@@ -126,14 +126,21 @@ const downloadCount = books.reduce((total, book) => total + book.data.downloads.
 
   <section class="home-cta">
     <div class="shell cta-panel">
-      <div>
+      <div class="cta-copy">
         <span class="section-label">START HERE</span>
         <h2>책을 펼쳤다면,<br />자료는 이미 준비되어 있습니다.</h2>
         <p>가입도, 로그인도 필요 없습니다. 필요한 파일을 골라 바로 시작하세요.</p>
+        <a class="button primary" href="/downloads/">
+          전체 자료 보기
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-4.5-4.5M16 10l-4.5 4.5" /></svg>
+        </a>
       </div>
-      <a class="button primary" href="/downloads/">
-        전체 자료 보기
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-4.5-4.5M16 10l-4.5 4.5" /></svg>
+      <a class="qr-card" href="https://feynman520.github.io/card/" target="_blank" rel="noreferrer" aria-label="함세준 디지털 명함 새 창에서 열기">
+        <span class="qr-frame">
+          <img src="/digital-card-qr.png" alt="함세준 디지털 명함 QR 코드" width="444" height="444" loading="lazy" />
+        </span>
+        <strong>QR 스캔 → 디지털 명함</strong>
+        <small>feynman520.github.io/card</small>
       </a>
     </div>
   </section>
@@ -197,11 +204,18 @@ const downloadCount = books.reduce((total, book) => total + book.data.downloads.
   .principle-grid p { margin-bottom: 0; color: var(--muted); font-size: 14.5px; }
 
   .home-cta { padding: 16px 0 112px; }
-  .cta-panel { display: flex; align-items: end; justify-content: space-between; gap: 48px; padding: 54px 58px; border-radius: 28px; color: #fff; background: var(--ink); box-shadow: var(--shadow-lg); }
+  .cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding: 54px 58px; border-radius: 28px; color: #fff; background: var(--ink); box-shadow: var(--shadow-lg); }
   .cta-panel .section-label { color: #9bb0ff; }
   .cta-panel h2 { margin-bottom: 14px; color: #fff; }
   .cta-panel p { max-width: 620px; margin-bottom: 0; color: #b9c0ce; }
   .cta-panel .button { flex: none; }
+  .cta-copy .button { margin-top: 30px; }
+  .qr-card { position: relative; display: flex; flex: none; align-items: center; flex-direction: column; padding: 22px 22px 18px; border: 1px solid rgba(255,255,255,.14); border-radius: 20px; color: #fff; background: rgba(255,255,255,.08); text-align: center; text-decoration: none; transition: transform 180ms ease, background-color 180ms ease; }
+  .qr-card:hover { background: rgba(255,255,255,.12); transform: translateY(-3px); }
+  .qr-frame { display: block; width: 186px; padding: 12px; border-radius: 13px; background: #fff; }
+  .qr-frame img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+  .qr-card strong { margin-top: 16px; font-size: 13px; letter-spacing: -.01em; }
+  .qr-card small { margin-top: 4px; color: #98a2b3; font-size: 10.5px; letter-spacing: .035em; }
 
   @media (max-width: 1000px) {
     .hero-grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 46px; }
