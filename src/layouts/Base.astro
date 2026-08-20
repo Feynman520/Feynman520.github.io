@@ -179,9 +179,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     inset: 0;
     content: '';
     pointer-events: none;
-    background:
-      radial-gradient(circle at 80% 4%, rgba(49, 87, 229, 0.08), transparent 28rem),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.72), transparent 34rem);
+    background: radial-gradient(circle at 80% 4%, rgba(49, 87, 229, 0.08), transparent 28rem);
   }
 
   a { color: inherit; }
@@ -276,6 +274,12 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
   .page-section { padding-block: 96px; }
   .page-section + .page-section { padding-top: 0; }
   .page-hero { padding: 88px 0 64px; }
+  .home-hero, .page-hero, .book-hero, .about-hero {
+    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(circle at 88% -8%, rgba(49, 87, 229, 0.07), transparent 26rem),
+      linear-gradient(180deg, #ffffff 0%, #f1f4fa 100%);
+  }
   .narrow { width: min(780px, 100%); }
   .eyebrow {
     display: inline-flex;
