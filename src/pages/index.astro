@@ -86,7 +86,9 @@ const totalRecipes = books.reduce((total, book) => total + book.data.recipes, 0)
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3.5c-2.7 0-4.4 2-4.4 4.4 0 3.6-1.6 4.6-1.6 4.6h12s-1.6-1-1.6-4.6c0-2.4-1.7-4.4-4.4-4.4Zm-1.6 12a1.7 1.7 0 0 0 3.2 0" /></svg>
                 </a>
               )}
-              <a class="button secondary small" href={`/downloads/#book-${book.data.slug}`}>자료 받기</a>
+              {book.data.downloads.length > 0 && (
+                <a class="button secondary small" href={`/downloads/#book-${book.data.slug}`}>자료 받기</a>
+              )}
             </div>
           </article>
         ))}
