@@ -2,12 +2,14 @@
 title: 교사를 위한 클로드코드
 slug: teacher
 tagline: 수업 준비부터 생활기록부까지, 교사의 저녁을 돌려주는 38개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 1
 cover: /covers/teacher.jpg
 spec: 38개 실전 레시피
 recipes: 38
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1223340
 downloads:
   - label: 한국고등학교 데이터셋
     file: /files/teacher/dataset.zip
@@ -21,7 +23,7 @@ downloads:
     file: /files/teacher/cheatsheet.pdf
     size: 61KB
     note: 책의 복붙 프롬프트 38개를 한자리에 (부록 A)
-updated: "2026-09-07"
+updated: "2026-09-09"
 ---
 
 교사의 하루를 시간의 눈으로 해부하면, 판단은 5분인데 손은 한 시간입니다. 학습지의 방향은 점심시간에 이미 정해졌는데, 저녁은 표를 그리고 줄을 맞추는 데 갑니다.
