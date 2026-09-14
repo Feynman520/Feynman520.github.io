@@ -8,6 +8,8 @@ cover: /covers/teacher.jpg
 spec: 38개 실전 레시피
 recipes: 38
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013567775
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1223340
 downloads:
@@ -23,7 +25,7 @@ downloads:
     file: /files/teacher/cheatsheet.pdf
     size: 61KB
     note: 책의 복붙 프롬프트 38개를 한자리에 (부록 A)
-updated: "2026-09-09"
+updated: "2026-09-14"
 ---
 
 교사의 하루를 시간의 눈으로 해부하면, 판단은 5분인데 손은 한 시간입니다. 학습지의 방향은 점심시간에 이미 정해졌는데, 저녁은 표를 그리고 줄을 맞추는 데 갑니다.

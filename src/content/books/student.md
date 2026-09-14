@@ -2,14 +2,16 @@
 title: 중고등학생을 위한 클로드코드
 slug: student
 tagline: 공부의 주도권을 돌려주는, 나만의 AI 공부 비서 — 36개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 2
 cover: /covers/student.jpg
 spec: 36개 실전 레시피
 recipes: 36
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1224388
 downloads: []
-updated: "2026-09-09"
+updated: "2026-09-14"
 ---
 
 시험 전날 밤을 시간의 눈으로 해부하면, 실력이 자라는 시간보다 **공부를 시작하기 위한 준비**에 쓰는 시간이 더 깁니다. 유인물을 찾고, 필기 사진을 뒤지고, 요점을 베껴 옮기다 보면 열한 시인데 공식은 아직 한 줄도 못 외웠습니다.
