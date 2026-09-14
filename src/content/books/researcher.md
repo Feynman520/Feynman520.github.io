@@ -8,8 +8,20 @@ cover: /covers/researcher.jpg
 spec: 42개 실전 레시피
 recipes: 42
 store: []
-downloads: []
-updated: "2026-09-09"
+downloads:
+  - label: 한국대학교 연구 데이터셋
+    file: /files/researcher/dataset.zip
+    size: 3.0MB
+    note: 가상 논문 PDF 12편·설문·실험·인터뷰·HWPX 서식·예산·영수증·IRB 등 43개 파일, 책의 예시를 100% 재현하는 가상 데이터
+  - label: 클로드코드 세팅 가이드 (연구자권)
+    file: /files/researcher/setup-guide.md
+    size: 1.9MB
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 논문 검색 도구 포함)
+  - label: 프롬프트 치트시트 (PDF)
+    file: /files/researcher/cheatsheet.pdf
+    size: 631KB
+    note: 책의 복붙 프롬프트 42개 레시피분을 한자리에 (부록 A)
+updated: "2026-09-14"
 ---
 
 밤 아홉 시의 연구실. 실험도 세미나도 끝났는데 포스트잇에는 리뷰어 응답문, 논문 PDF 정리, 데이터 전처리, 연구비 증빙이 남아 있습니다. 시간의 눈으로 해부하면, 연구자의 하루에서 **생각하는 시간**보다 찾고 옮기고 맞추는 시간이 더 깁니다.
