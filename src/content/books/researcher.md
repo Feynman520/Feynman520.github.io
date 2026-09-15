@@ -2,12 +2,14 @@
 title: 연구자를 위한 클로드코드
 slug: researcher
 tagline: 연구의 흐름을 지켜주는, 나만의 AI 연구 비서 — 42개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 3
 cover: /covers/researcher.jpg
 spec: 42개 실전 레시피
 recipes: 42
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1224764
 downloads:
   - label: 한국대학교 연구 데이터셋
     file: /files/researcher/dataset.zip
