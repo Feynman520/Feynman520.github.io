@@ -8,10 +8,12 @@ cover: /covers/student.jpg
 spec: 36개 실전 레시피
 recipes: 36
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013578111
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224388
 downloads: []
-updated: "2026-09-14"
+updated: "2026-09-15"
 ---
 
 시험 전날 밤을 시간의 눈으로 해부하면, 실력이 자라는 시간보다 **공부를 시작하기 위한 준비**에 쓰는 시간이 더 깁니다. 유인물을 찾고, 필기 사진을 뒤지고, 요점을 베껴 옮기다 보면 열한 시인데 공식은 아직 한 줄도 못 외웠습니다.
