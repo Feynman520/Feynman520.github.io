@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다온 마진 계산기</title>
+<style>
+  :root { --brick:#B03A2A; --soft:#FDF6F3; --line:#E3D5CF; --text:#242220; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:'Malgun Gothic','맑은 고딕',sans-serif; background:#FAF8F5; color:var(--text);
+         display:flex; justify-content:center; padding:32px 16px; }
+  .app { width:100%; max-width:520px; }
+  h1 { font-size:22px; margin-bottom:4px; }
+  .sub { color:#8a857c; font-size:13px; margin-bottom:20px; }
+  .card { background:#fff; border:1.5px solid var(--line); border-radius:14px; padding:20px; margin-bottom:14px; }
+  label { display:block; font-size:13px; font-weight:bold; margin:10px 0 4px; }
+  input, select { width:100%; padding:10px 12px; border:1.5px solid var(--line); border-radius:8px; font-size:15px; }
+  input:focus { outline:2px solid var(--brick); }
+  .row { display:flex; gap:10px; }
+  .row > div { flex:1; }
+  .result { background:var(--soft); border:2px solid var(--brick); }
+  .big { font-size:28px; font-weight:bold; color:var(--brick); }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; margin-top:12px; font-size:14px; }
+  .grid b { text-align:right; }
+  .warn { color:#a33; font-size:13px; margin-top:8px; display:none; }
+  .foot { text-align:center; font-size:11px; color:#aaa; margin-top:10px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>다온 마진 계산기</h1>
+  <p class="sub">판매가와 원가를 넣으면 채널별 마진과 손익분기 판매량을 계산합니다.</p>
+
+  <div class="card">
+    <label>소비자 판매가 (원)</label>
+    <input type="number" id="price" value="12000">
+    <div class="row">
+      <div><label>재료·포장 원가 (원)</label><input type="number" id="cost" value="4300"></div>
+      <div><label>배송·부자재 (원/개)</label><input type="number" id="ship" value="2100"></div>
+    </div>
+    <label>판매 채널</label>
+    <select id="channel">
+      <option value="direct">자사몰 직판 (수수료 0%)</option>
+      <option value="b2b">B2B 납품 (납품가 = 판매가의 75%)</option>
+      <option value="consign">위탁 판매 (수수료 20%)</option>
+    </select>
+    <label>월 고정비 (원) — 임차·급여 등</label>
+    <input type="number" id="fixed" value="11400000">
+  </div>
+
+  <div class="card result">
+    <div>개당 남는 돈</div>
+    <div class="big" id="margin">—</div>
+    <div class="grid">
+      <span>마진율</span><b id="rate">—</b>
+      <span>손익분기 판매량(월)</span><b id="bep">—</b>
+      <span>실수령 판매가</span><b id="net">—</b>
+      <span>채널 비용</span><b id="fee">—</b>
+    </div>
+    <p class="warn" id="warn">⚠ 이 조건으로는 팔수록 손해입니다. 가격·원가를 다시 보세요.</p>
+  </div>
+  <p class="foot">『사업가를 위한 클로드코드』 11-3 예시 도구 · 계산 결과는 참고용, 최종 검산은 엑셀로</p>
+</div>
+<script>
+  const $ = id => document.getElementById(id);
+  function calc() {
+    const p = +$('price').value || 0, c = +$('cost').value || 0,
+          s = +$('ship').value || 0, f = +$('fixed').value || 0, ch = $('channel').value;
+    let net = p, fee = 0;
+    if (ch === 'b2b') { net = p * 0.75; fee = 0; }
+    if (ch === 'consign') { fee = p * 0.2; net = p - fee; }
+    const margin = net - c - s;
+    const rate = net > 0 ? (margin / net * 100) : 0;
+    const bep = margin > 0 ? Math.ceil(f / margin) : null;
+    $('margin').textContent = margin.toLocaleString() + '원';
+    $('rate').textContent = rate.toFixed(1) + '%';
+    $('net').textContent = Math.round(net).toLocaleString() + '원';
+    $('fee').textContent = Math.round(fee + s).toLocaleString() + '원';
+    $('bep').textContent = bep ? bep.toLocaleString() + '개' : '계산 불가';
+    $('warn').style.display = margin <= 0 ? 'block' : 'none';
+  }
+  document.querySelectorAll('input, select').forEach(el => el.addEventListener('input', calc));
+  calc();
+</script>
+</body>
+</html>
