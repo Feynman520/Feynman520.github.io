@@ -2,12 +2,14 @@
 title: 작가를 위한 클로드코드
 slug: writer
 tagline: 쓰는 시간을 지켜주는, 나만의 AI 집필 비서 — 41개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 6
 cover: /covers/writer.jpg
 spec: 41개 실전 레시피
 recipes: 41
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1225401
 downloads:
   - label: 작가권 데이터셋
     file: /files/writer/dataset.zip
@@ -16,12 +18,12 @@ downloads:
   - label: 클로드코드 세팅 가이드 (작가권)
     file: /files/writer/setup-guide.md
     size: 1.9MB
-    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 워드·엑셀·한글·PDF 문서 MCP 포함)
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 워드·엑셀·한글·PDF 문서 MCP 포함 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서))
   - label: 프롬프트 치트시트 (PDF)
     file: /files/writer/cheatsheet.pdf
     size: 458KB
     note: 책의 복붙 프롬프트 41개 레시피분을 연간 작가 캘린더 순서로 한자리에 (부록 A)
-updated: "2026-09-22"
+updated: "2026-09-23"
 ---
 
 수요일 밤 열한 시, 내일 오후 다섯 시는 연재 31화 마감. 필명 단여울의 하루를 시간의 눈으로 해부하면, 문장을 쓴 시간은 세 시간인데 호칭을 확인하러 예전 회차를 뒤지고, 자료를 검색하고, '진짜_최종' 파일과 씨름하고, 정산서를 검산한 시간이 그보다 깁니다. **작가의 하루는 늘 문장 밖에 먹히고 있었습니다.**

@@ -2,12 +2,14 @@
 title: 사업가를 위한 클로드코드
 slug: business-owner
 tagline: 판단과 실행의 속도를 높여주는, 나만의 AI 경영 비서 — 41개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 5
 cover: /covers/business-owner.jpg
 spec: 41개 실전 레시피
 recipes: 41
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1225397
 downloads:
   - label: 주식회사 다온 데이터셋
     file: /files/business-owner/dataset.zip
@@ -16,7 +18,7 @@ downloads:
   - label: 클로드코드 세팅 가이드 (사업가권)
     file: /files/business-owner/setup-guide.md
     size: 1.9MB
-    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 엑셀·워드·한글·파워포인트·PDF 문서 MCP 5종 포함)
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 엑셀·워드·한글·파워포인트·PDF 문서 MCP 5종 포함 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서))
   - label: 프롬프트 치트시트 (PDF)
     file: /files/business-owner/cheatsheet.pdf
     size: 669KB
@@ -25,7 +27,7 @@ downloads:
     file: /files/business-owner/margin-calculator.html
     size: 4KB
     note: 11-3 '나만의 경영 도구 만들기'에서 실제로 만든 한 파일짜리 도구. 내려받아 브라우저로 열면 바로 동작
-updated: "2026-09-22"
+updated: "2026-09-23"
 ---
 
 밤 열 시, 수제 그래놀라 회사 주식회사 다온의 김다온 대표 책상. 낮에는 물건을 팔고, 밤에는 서류를 씁니다. 지원사업 공고 열 건, 반년치 매출·지출 장부, 거래처가 보내온 계약서 수정본, 직원 세 명의 급여 검산, 부가세 신고 자료. 시간의 눈으로 해부하면 사장의 밤에서 **판단하는 시간**은 짧고, 읽고 옮기고 맞추는 손의 시간이 깁니다.

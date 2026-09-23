@@ -8,6 +8,10 @@ cover: /covers/researcher.jpg
 spec: 42개 실전 레시피
 recipes: 42
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013609790
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/196825769
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224764
 downloads:
@@ -18,12 +22,12 @@ downloads:
   - label: 클로드코드 세팅 가이드 (연구자권)
     file: /files/researcher/setup-guide.md
     size: 1.9MB
-    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 논문 검색 도구 포함)
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 논문 검색 도구 포함 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서))
   - label: 프롬프트 치트시트 (PDF)
     file: /files/researcher/cheatsheet.pdf
     size: 631KB
     note: 책의 복붙 프롬프트 42개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-14"
+updated: "2026-09-23"
 ---
 
 밤 아홉 시의 연구실. 실험도 세미나도 끝났는데 포스트잇에는 리뷰어 응답문, 논문 PDF 정리, 데이터 전처리, 연구비 증빙이 남아 있습니다. 시간의 눈으로 해부하면, 연구자의 하루에서 **생각하는 시간**보다 찾고 옮기고 맞추는 시간이 더 깁니다.

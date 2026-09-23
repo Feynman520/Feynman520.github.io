@@ -16,7 +16,7 @@ downloads:
   - label: 클로드코드 세팅 가이드 (크리에이터권)
     file: /files/creator/setup-guide.md
     size: 1.9MB
-    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 워드·엑셀·한글·PDF 문서 MCP 포함)
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 워드·엑셀·한글·PDF 문서 MCP 포함, 자막용 Whisper·ffmpeg 설치 포함 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서))
   - label: 프롬프트 치트시트 (PDF)
     file: /files/creator/cheatsheet.pdf
     size: 454KB

@@ -10,10 +10,26 @@ recipes: 36
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013578111
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/196718985
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=402792212
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224388
-downloads: []
-updated: "2026-09-15"
+downloads:
+  - label: 한국고 학생 데이터셋
+    file: /files/student/dataset.zip
+    size: 17.9MB
+    note: 가상 학생 김가온의 필기 사진 4장·오답 사진 3장·서술형 답안 사진, 유인물·수행평가 안내 PDF 5건, 성적표(xlsx)·시간표·학사일정·독서 메모, 발표용 PPT 틀 등 20파일. 책의 예시를 100% 재현하는 가상 학생 데이터(실제 학교·학생과 무관)
+  - label: 클로드코드 세팅 가이드 (학생권)
+    file: /files/student/setup-guide.md
+    size: 1.9MB
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서). 보호자와 함께 진행을 권장)
+  - label: 프롬프트 치트시트 (PDF)
+    file: /files/student/cheatsheet.pdf
+    size: 442KB
+    note: 책의 복붙 프롬프트 36개 레시피분을 한자리에 (부록 A)
+updated: "2026-09-23"
 ---
 
 시험 전날 밤을 시간의 눈으로 해부하면, 실력이 자라는 시간보다 **공부를 시작하기 위한 준비**에 쓰는 시간이 더 깁니다. 유인물을 찾고, 필기 사진을 뒤지고, 요점을 베껴 옮기다 보면 열한 시인데 공식은 아직 한 줄도 못 외웠습니다.

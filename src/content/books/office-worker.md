@@ -2,12 +2,18 @@
 title: 직장인을 위한 클로드코드
 slug: office-worker
 tagline: 직장인의 저녁을 돌려주는, 나만의 AI 업무 비서 — 39개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 4
 cover: /covers/office-worker.jpg
 spec: 39개 실전 레시피
 recipes: 39
-store: []
+store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013609694
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/196825781
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1224808
 downloads:
   - label: 다온상사 데이터셋
     file: /files/office-worker/dataset.zip
@@ -16,12 +22,12 @@ downloads:
   - label: 클로드코드 세팅 가이드 (직장인권)
     file: /files/office-worker/setup-guide.md
     size: 1.9MB
-    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 엑셀·워드·한글·파워포인트·PDF 문서 MCP 5종 포함)
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 엑셀·워드·한글·파워포인트·PDF 문서 MCP 5종 포함 — 공용 v14 원문 전체 + 책 독자 부록(진행 모드 선택·맞춤 인터뷰·문서 스킬·첫 대화 연습·사용설명서))
   - label: 프롬프트 치트시트 (PDF)
     file: /files/office-worker/cheatsheet.pdf
     size: 574KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-15"
+updated: "2026-09-23"
 ---
 
 월요일 아침 아홉 시, 경영지원팀 김대리의 모니터. 지점 열두 곳에서 제각각 보내온 실적 파일, 이번 주 상신할 품의서, 수요일까지의 주간보고, 법인카드 영수증 더미. 시간의 눈으로 해부하면 직장인의 하루에서 **판단하는 시간**은 짧고, 옮기고 맞추고 붙여 넣는 손의 시간이 깁니다.
