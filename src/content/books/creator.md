@@ -8,8 +8,20 @@ cover: /covers/creator.jpg
 spec: 39개 실전 레시피
 recipes: 39
 store: []
-downloads: []
-updated: "2026-09-09"
+downloads:
+  - label: 크리에이터권 데이터셋
+    file: /files/creator/dataset.zip
+    size: 1.4MB
+    note: 가상 홈베이킹 채널 『담비의 오븐일기』의 전사본 2편·자막 SRT 4개·대본 2편, 스튜디오 데이터 CSV 3종·댓글 200개, 협찬 제안 메일 2통·광고 계약서(docx)·수익 정산표(xlsx), 음성 샘플(wav), 대청소 연습용 어질러진 촬영 폴더 28파일 등 47파일. 일부러 심어 둔 자막·데이터·계약·정산 오류 포함, 책의 예시를 100% 재현하는 가상 크리에이터 데이터
+  - label: 클로드코드 세팅 가이드 (크리에이터권)
+    file: /files/creator/setup-guide.md
+    size: 1.9MB
+    note: 클로드코드에게 읽혀 그대로 실행시키는 세팅 문서 (책 3-5장, 워드·엑셀·한글·PDF 문서 MCP 포함)
+  - label: 프롬프트 치트시트 (PDF)
+    file: /files/creator/cheatsheet.pdf
+    size: 454KB
+    note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
+updated: "2026-09-23"
 ---
 
 촬영은 40분 만에 끝났는데, 업로드는 새벽에야 끝납니다. 자막을 받아 적고, 제목과 설명과 태그를 짓고, 썸네일 문구를 고르고, 댓글을 읽는 동안 밤이 갑니다. 시간의 눈으로 해부하면, 크리에이터의 하루는 **화면 안**보다 화면 밖에서 늦어집니다.
