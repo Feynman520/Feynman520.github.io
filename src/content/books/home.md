@@ -2,12 +2,14 @@
 title: 가정을 위한 클로드코드
 slug: home
 tagline: 살림의 정보 잡무는 에이전트에게, 가족과의 시간은 우리에게 — 33개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 8
 cover: /covers/home.jpg
 spec: 33개 실전 레시피
 recipes: 33
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1225504
 downloads:
   - label: 가정권 데이터셋
     file: /files/home/dataset.zip
@@ -21,7 +23,7 @@ downloads:
     file: /files/home/cheatsheet.pdf
     size: 428KB
     note: 책의 복붙 프롬프트 33개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-25"
+updated: "2026-09-28"
 ---
 
 일요일 밤 9시 40분, 아이 둘을 재우고 나면 식탁 위에 두 번째 하루가 기다립니다. 관리비 고지서와 가정통신문, 카드 명세서와 리조트 결제 마감 알림. 살림에는 몸으로 하는 일 말고도 **머리로 하는 살림**, 곧 기록하고 계산하고 비교하고 서류를 챙기는 정보 잡무가 있습니다.

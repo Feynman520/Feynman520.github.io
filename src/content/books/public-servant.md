@@ -2,12 +2,14 @@
 title: 공무원을 위한 클로드코드
 slug: public-servant
 tagline: 공문서의 책임은 내가, 취합·서식·검산은 에이전트가 — 39개의 실전 레시피
-status: 출간 준비 중
+status: 판매 중
 order: 9
 cover: /covers/public-servant.jpg
 spec: 39개 실전 레시피
 recipes: 39
-store: []
+store:
+  - name: 유페이퍼 (전자책 · EPUB)
+    url: https://sjandsh05.upaper.kr/content/1225537
 downloads:
   - label: 공무원권 데이터셋
     file: /files/public-servant/dataset.zip
@@ -21,7 +23,7 @@ downloads:
     file: /files/public-servant/cheatsheet.pdf
     size: 458KB
     note: 책의 복붙 프롬프트 39개 레시피분을 공직 달력 순서로 한자리에 (부록 A)
-updated: "2026-09-26"
+updated: "2026-09-28"
 ---
 
 금요일 오후 다섯 시, 시청 4층 평생학습과. 보고서의 방향은 이미 머릿속에 있는데, 열두 개 동에서 온 엑셀을 한 표로 모으고, 한/글 양식의 표 칸과 개조식 기호를 맞추고, 합계와 증감률을 두 번씩 검산하는 사이 퇴근이 늦어집니다. 판단에 쓴 시간은 삼십 분인데 시계는 여덟 시 사십 분입니다. 퇴근은 **판단이 아니라 판단의 주변**에서 늦어집니다.
