@@ -12,6 +12,8 @@ store:
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013609694
   - name: 예스24 (전자책 · eBook)
     url: https://www.yes24.com/product/goods/196825781
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403172339
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224808
 downloads:
