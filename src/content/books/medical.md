@@ -8,6 +8,8 @@ cover: /covers/medical.jpg
 spec: 39개 실전 레시피
 recipes: 39
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660131
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225661
 downloads:
@@ -23,7 +25,7 @@ downloads:
     file: /files/medical/cheatsheet.pdf
     size: 437KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-29"
+updated: "2026-10-02"
 ---
 
 수요일 오후 여섯 시 반, 6년째 동네 의원을 꾸리는 가정의학과 전문의 서다온 원장(44)의 마지막 환자가 진료실을 나섭니다. 그때 행정실장이 서류 파일을 들고 문을 두드립니다. 추석 휴진 공지를 문자·홈페이지·출입문·전화 멘트 네 군데에 맞춰 쓰고, 보건소 공문 세 건에서 무엇을 언제까지 내야 하는지 찾고, 직원 법정의무교육 이수 현황의 빈칸을 확인하다 보면 모니터의 시계가 밤 열 시를 넘깁니다. 진료로 쓰는 시간보다 진료 뒤에 쓰는 시간이 긴 날, **진료가 끝난 뒤의 두 번째 근무**입니다.

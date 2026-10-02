@@ -8,6 +8,10 @@ cover: /covers/creator.jpg
 spec: 39개 실전 레시피
 recipes: 39
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660121
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197313476
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225447
 downloads:
@@ -23,7 +27,7 @@ downloads:
     file: /files/creator/cheatsheet.pdf
     size: 454KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-25"
+updated: "2026-10-02"
 ---
 
 촬영은 40분 만에 끝났는데, 업로드는 새벽에야 끝납니다. 자막을 받아 적고, 제목과 설명과 태그를 짓고, 썸네일 문구를 고르고, 댓글을 읽는 동안 밤이 갑니다. 시간의 눈으로 해부하면, 크리에이터의 하루는 **화면 안**보다 화면 밖에서 늦어집니다.

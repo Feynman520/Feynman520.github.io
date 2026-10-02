@@ -8,6 +8,10 @@ cover: /covers/parent.jpg
 spec: 34개 실전 레시피
 recipes: 34
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660104
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197313500
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225591
 downloads:
@@ -27,7 +31,7 @@ downloads:
     file: /files/parent/links.html
     size: 6KB
     note: 부록 E '제도·레드라인 요약과 격변 주의표'에 적은 공식 문서(아동수당·부모급여·첫만남이용권·유보통합·늘봄학교·고교학점제·2028 대입·수행평가 AI·개인정보보호위원회)의 게시물 주소 모음. 브라우저로 열면 바로 이동
-updated: "2026-09-28"
+updated: "2026-10-02"
 ---
 
 3월 둘째 주 월요일 밤 10시, 세 아이가 겨우 잠든 뒤 휴대폰을 켜면 빨간 숫자가 줄지어 있습니다. 학교 공지 앱, 반 학부모 단체방, 어린이집 알림장 앱, 학원 문자, 그리고 가방 속에 접혀 온 종이 통신문까지. 알림은 다섯 곳에서 옵니다. 부모를 지치게 하는 것은 **아이가 아니라 아이를 둘러싼 정보**입니다.

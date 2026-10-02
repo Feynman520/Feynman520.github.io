@@ -8,6 +8,8 @@ cover: /covers/senior.jpg
 spec: 37개 실전 레시피
 recipes: 37
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660093
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225642
 downloads:
@@ -23,7 +25,7 @@ downloads:
     file: /files/senior/cheatsheet.pdf
     size: 441KB
     note: 책의 복붙 프롬프트 37개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-28"
+updated: "2026-10-02"
 ---
 
 설 연휴 첫날 아침, 40년 동안 시장에서 반찬 가게를 꾸려 온 오복순 씨(67)의 휴대폰에 "저장 공간이 부족합니다"라는 알림이 뜹니다. 식탁 위의 건강보험 안내문은 세 번을 읽어도 뜻이 들어오지 않습니다. 딸은 친절하게 알려 주었지만, 같은 것을 세 번째 물으려다 복순 씨는 입을 다물었습니다. 기계가 어려웠다기보다 미안해서였습니다. **또 물어보기 미안한 날**입니다.
