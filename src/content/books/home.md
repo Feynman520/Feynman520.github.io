@@ -12,6 +12,8 @@ store:
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660124
   - name: 예스24 (전자책 · eBook)
     url: https://www.yes24.com/product/goods/197313484
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403499121
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225504
 downloads:
@@ -27,7 +29,7 @@ downloads:
     file: /files/home/cheatsheet.pdf
     size: 428KB
     note: 책의 복붙 프롬프트 33개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-02"
+updated: "2026-10-04"
 ---
 
 일요일 밤 9시 40분, 아이 둘을 재우고 나면 식탁 위에 두 번째 하루가 기다립니다. 관리비 고지서와 가정통신문, 카드 명세서와 리조트 결제 마감 알림. 살림에는 몸으로 하는 일 말고도 **머리로 하는 살림**, 곧 기록하고 계산하고 비교하고 서류를 챙기는 정보 잡무가 있습니다.
