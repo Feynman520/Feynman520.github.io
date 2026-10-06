@@ -12,6 +12,8 @@ store:
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660116
   - name: 예스24 (전자책 · eBook)
     url: https://www.yes24.com/product/goods/197313501
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403728057
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225599
 downloads:
@@ -27,7 +29,7 @@ downloads:
     file: /files/freelancer/cheatsheet.pdf
     size: 457KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-02"
+updated: "2026-10-07"
 ---
 
 금요일 오후 네 시, 1인 스튜디오를 꾸리는 디자이너 윤슬은 카페 로고 시안을 막 끝냈습니다. 돈이 되는 일은 거기서 끝났습니다. 그런데 저녁 일곱 시부터 자정까지가 남아 있습니다. 견적서를 고치다 합계가 어긋나고, 열두 쪽짜리 계약서를 읽고, 잔금 청구서의 3.3%를 계산하고, 두 달째 밀린 강사료 독촉 문자를 썼다 지웁니다. **일은 끝났는데 서류가 남은 금요일**입니다.
