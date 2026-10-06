@@ -10,6 +10,8 @@ recipes: 41
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660115
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197648551
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225632
 downloads:
@@ -25,7 +27,7 @@ downloads:
     file: /files/marketer/cheatsheet.pdf
     size: 468KB
     note: 책의 복붙 프롬프트 41개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-02"
+updated: "2026-10-06"
 ---
 
 월요일 아침 9시, 식물성 바디·헤어케어 브랜드의 6년 차 마케터 한나래에게 주간 회의까지 남은 시간은 한 시간입니다. 메타·네이버·구글에서 내려받은 CSV는 날짜 형식이 셋 다 다르고, '노출'과 '노출수'와 'Impr.'를 한 열로 맞추고 나니 9시 25분. 겨우 합친 표의 ROAS는 대행사 리포트와 한참 다르고, 9시 47분에는 "추석 선물 세트 광고 카피 20개, 오늘 중으로요"라는 메시지가 옵니다. **숫자를 읽기도 전에, 숫자를 맞추다 한 시간이 간 월요일**입니다.

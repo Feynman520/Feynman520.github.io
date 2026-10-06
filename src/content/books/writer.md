@@ -10,6 +10,8 @@ recipes: 41
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660120
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197648519
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403414811
   - name: 유페이퍼 (전자책 · EPUB)
@@ -27,7 +29,7 @@ downloads:
     file: /files/writer/cheatsheet.pdf
     size: 458KB
     note: 책의 복붙 프롬프트 41개 레시피분을 연간 작가 캘린더 순서로 한자리에 (부록 A)
-updated: "2026-10-02"
+updated: "2026-10-06"
 ---
 
 수요일 밤 열한 시, 내일 오후 다섯 시는 연재 31화 마감. 필명 단여울의 하루를 시간의 눈으로 해부하면, 문장을 쓴 시간은 세 시간인데 호칭을 확인하러 예전 회차를 뒤지고, 자료를 검색하고, '진짜_최종' 파일과 씨름하고, 정산서를 검산한 시간이 그보다 깁니다. **작가의 하루는 늘 문장 밖에 먹히고 있었습니다.**
