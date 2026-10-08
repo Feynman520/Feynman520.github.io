@@ -10,6 +10,8 @@ recipes: 39
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013660133
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197773423
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403728149
   - name: 유페이퍼 (전자책 · EPUB)
@@ -27,7 +29,7 @@ downloads:
     file: /files/lawyer/cheatsheet.pdf
     size: 429KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-07"
+updated: "2026-10-08"
 ---
 
 9월 마지막 금요일 오후 여섯 시, 직원 없이 혼자 사무소를 꾸리는 개업 4년 차 변호사 도하진의 마지막 상담이 끝납니다. 책상 위에는 2주 뒤 변론기일이 잡힌 대여금 사건의 기록 600여 쪽이 의뢰인이 보낸 순서 그대로 쌓여 있습니다. 파일 이름을 날짜순으로 바꾸고, 쪽수를 적으며 사건 경과를 옮기고, 증거목록의 호증 번호를 기록과 한 줄씩 대조하고, 청구금액과 지연이자를 계산기로 두 번 다시 셉니다. 자정에 불을 끄며 하진은 깨닫습니다. **여섯 시간 가운데 판단한 시간은 한 시간이 채 되지 않았습니다.** 나머지는 전부 정리였습니다.

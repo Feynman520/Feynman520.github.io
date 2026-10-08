@@ -8,6 +8,12 @@ cover: /covers/small-business.jpg
 spec: 38개 실전 레시피
 recipes: 38
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013675062
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197773482
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403872855
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225872
 downloads:
@@ -23,7 +29,7 @@ downloads:
     file: /files/small-business/cheatsheet.pdf
     size: 441KB
     note: 책의 복붙 프롬프트 38개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-02"
+updated: "2026-10-08"
 ---
 
 화요일 밤 9시, 늘봄시 한울동 골목의 열두 석짜리 밥집 『온기식당』에서 마지막 손님이 된장찌개 한 그릇을 비우고 나갑니다. 3년 반째 가게를 꾸려 온 사장 강다은은 설거지와 주방 정리를 끝내고 계산대 앞에 앉습니다. 서랍에는 이번 주 안에 장부로 옮겨야 할 거래처 영수증이 수북하고, 휴대폰에는 읽지 않은 리뷰 알림이 14개 쌓여 있습니다. 두 배달앱에서 온 8월 정산서는 몇 번을 훑어도 무엇이 얼마나 빠졌는지 끝내 계산되지 않습니다. 알바생은 근무 시간을 바꿔 달라고 묻고, 상인회 단톡방에는 원산지 표시 점검이 나온다는 소식이 올라옵니다. 그날 다은이 가게 불을 끈 것은 자정이 조금 지나서였습니다. **손님 앞에서는 한 번도 지치지 않았는데, 뒤편의 일이 사장님의 새벽을 먹고 있었습니다.**

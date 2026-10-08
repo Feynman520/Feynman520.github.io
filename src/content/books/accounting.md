@@ -10,6 +10,10 @@ recipes: 39
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013666810
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/197773464
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403872893
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225795
 downloads:
@@ -25,7 +29,7 @@ downloads:
     file: /files/accounting/cheatsheet.pdf
     size: 424KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-06"
+updated: "2026-10-08"
 ---
 
 10월 8일 목요일 저녁 일곱 시, 새빛시에서 개업 6년 차를 맞은 세무사 오세린의 책상 달력에는 동그라미가 두 개 있습니다. 10월 12일 원천세, 그리고 10월 25일 부가가치세 2기 예정신고. 사무직원 한 명과 함께 맡은 거래처는 43곳입니다. 카페 두 곳에서 모은 영수증 봉투를 열고, 카드사마다 열 순서가 다른 법인카드 내역을 합치고, 홈택스에서 내려받은 전자세금계산서 목록과 장부를 한 줄씩 맞춰 보고, 자료가 안 온 거래처 여섯 곳에 이름과 빠진 자료를 바꿔 가며 독촉 문자를 씁니다. 자정이 다 되어 컴퓨터를 끄며 세린은 깨닫습니다. **다섯 시간 가운데 세무사로서 판단한 시간은 한 시간이 채 되지 않았습니다.** 나머지는 맞춰 보는 시간이었습니다.
