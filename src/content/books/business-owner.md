@@ -14,6 +14,8 @@ store:
     url: https://www.yes24.com/product/goods/197288663
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403414519
+  - name: 북큐브 (전자책 · eBook)
+    url: https://www.bookcube.com/detail.asp?series_num=926071594
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225397
 downloads:
@@ -33,7 +35,7 @@ downloads:
     file: /files/business-owner/margin-calculator.html
     size: 4KB
     note: 11-3 '나만의 경영 도구 만들기'에서 실제로 만든 한 파일짜리 도구. 내려받아 브라우저로 열면 바로 동작
-updated: "2026-10-02"
+updated: "2026-10-19"
 ---
 
 밤 열 시, 수제 그래놀라 회사 주식회사 다온의 김다온 대표 책상. 낮에는 물건을 팔고, 밤에는 서류를 씁니다. 지원사업 공고 열 건, 반년치 매출·지출 장부, 거래처가 보내온 계약서 수정본, 직원 세 명의 급여 검산, 부가세 신고 자료. 시간의 눈으로 해부하면 사장의 밤에서 **판단하는 시간**은 짧고, 읽고 옮기고 맞추는 손의 시간이 깁니다.

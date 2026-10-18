@@ -10,6 +10,10 @@ recipes: 39
 store:
   - name: 교보문고 (전자책 · eBook)
     url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013675065
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/198056412
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=404388116
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225969
 downloads:
@@ -25,7 +29,7 @@ downloads:
     file: /files/online-seller/cheatsheet.pdf
     size: 460KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-08"
+updated: "2026-10-19"
 ---
 
 새벽 한 시, 새 상품 열두 개 가운데 세 개. 새빛시의 작은 집 겸 창고에서 온라인 스토어 『소담살림』을 혼자 꾸리는 한소담은 스마트스토어와 쿠팡 두 곳에서 주방·살림 용품을 위탁으로 팔고, 직접 사입한 그래놀라 한 종류를 함께 팝니다. 오전 9시에는 열 이름도 옵션 표기도 다른 두 채널의 주문을 한 표로 합쳐 발주서를 만들고, 오전 11시에는 도매처 품절 공지 속 상품을 두 채널에서 내립니다. 오후 3시에는 답하지 못한 문의 23건을 한 건씩 읽고, 오후 6시에는 택배사의 추석 전 마지막 접수일에서 거꾸로 계산해 배송 마감 공지를 씁니다. 저녁을 먹고 나서야 새 상품 열두 개 등록을 시작해, 새벽 한 시에 세 개를 끝냈습니다. **그날 소담이 "무엇을 팔까"를 고민한 시간은 거의 없었습니다. 대부분은 이 파일에서 저 파일로, 이 화면에서 저 화면으로 옮겨 적는 시간이었습니다.**

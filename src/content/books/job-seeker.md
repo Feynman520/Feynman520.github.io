@@ -8,6 +8,12 @@ cover: /covers/job-seeker.jpg
 spec: 39개 실전 레시피
 recipes: 39
 store:
+  - name: 교보문고 (전자책 · eBook)
+    url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013680229
+  - name: 예스24 (전자책 · eBook)
+    url: https://www.yes24.com/product/goods/198287408
+  - name: 알라딘 (전자책 · eBook)
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=404316052
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1226165
 downloads:
@@ -23,7 +29,7 @@ downloads:
     file: /files/job-seeker/cheatsheet.pdf
     size: 613KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-06"
+updated: "2026-10-19"
 ---
 
 새벽 두 시, 하람시의 작은 원룸에서 강다온은 아직 노트북 앞에 앉아 있습니다. 지난 8월 산업공학과를 졸업하고 SCM과 품질, 물류 데이터 직무를 준비하는 다온에게 이번 하반기 공채는 첫 본격 도전입니다. 화면에는 한 회사 지원서의 '지원 동기' 칸이 열려 있습니다. 같은 문항을 회사 이름만 바꿔 고쳐 쓰는 것이 벌써 네 번째이고, 브라우저 탭은 스물세 개입니다. 오전에는 공고 세 개의 마감 시각을 메모장에 옮기다 하나를 한 시간 잘못 적었고, 저녁에는 학회 프로젝트의 숫자 하나를 찾으려고 공유 드라이브와 휴대폰 메모장과 발표 자료를 차례로 뒤졌습니다. 밤 아홉 시에 쓴 초안은 글자 수 제한을 넘었고, 새벽 두 시의 다온은 조사 하나를 지우고 다시 세고 있습니다. **그날 다온이 "나는 왜 이 회사에서 이 일을 하고 싶은가"를 생각한 시간은 거의 없었습니다. 하루의 대부분은 찾고, 옮기고, 맞추는 시간이었습니다.**

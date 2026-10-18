@@ -14,6 +14,8 @@ store:
     url: https://www.yes24.com/product/goods/196825769
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403172237
+  - name: 북큐브 (전자책 · eBook)
+    url: https://www.bookcube.com/detail.asp?series_num=926071316
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224764
 downloads:
@@ -29,7 +31,7 @@ downloads:
     file: /files/researcher/cheatsheet.pdf
     size: 631KB
     note: 책의 복붙 프롬프트 42개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-23"
+updated: "2026-10-19"
 ---
 
 밤 아홉 시의 연구실. 실험도 세미나도 끝났는데 포스트잇에는 리뷰어 응답문, 논문 PDF 정리, 데이터 전처리, 연구비 증빙이 남아 있습니다. 시간의 눈으로 해부하면, 연구자의 하루에서 **생각하는 시간**보다 찾고 옮기고 맞추는 시간이 더 깁니다.

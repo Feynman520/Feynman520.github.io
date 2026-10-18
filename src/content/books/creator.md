@@ -14,6 +14,8 @@ store:
     url: https://www.yes24.com/product/goods/197313476
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403498972
+  - name: 북큐브 (전자책 · eBook)
+    url: https://www.bookcube.com/detail.asp?series_num=926071615
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1225447
 downloads:
@@ -29,7 +31,7 @@ downloads:
     file: /files/creator/cheatsheet.pdf
     size: 454KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-10-04"
+updated: "2026-10-19"
 ---
 
 촬영은 40분 만에 끝났는데, 업로드는 새벽에야 끝납니다. 자막을 받아 적고, 제목과 설명과 태그를 짓고, 썸네일 문구를 고르고, 댓글을 읽는 동안 밤이 갑니다. 시간의 눈으로 해부하면, 크리에이터의 하루는 **화면 안**보다 화면 밖에서 늦어집니다.

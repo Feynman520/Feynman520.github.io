@@ -14,6 +14,8 @@ store:
     url: https://www.yes24.com/product/goods/196825781
   - name: 알라딘 (전자책 · eBook)
     url: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=403172339
+  - name: 북큐브 (전자책 · eBook)
+    url: https://www.bookcube.com/detail.asp?series_num=926071326
   - name: 유페이퍼 (전자책 · EPUB)
     url: https://sjandsh05.upaper.kr/content/1224808
 downloads:
@@ -29,7 +31,7 @@ downloads:
     file: /files/office-worker/cheatsheet.pdf
     size: 574KB
     note: 책의 복붙 프롬프트 39개 레시피분을 한자리에 (부록 A)
-updated: "2026-09-23"
+updated: "2026-10-19"
 ---
 
 월요일 아침 아홉 시, 경영지원팀 김대리의 모니터. 지점 열두 곳에서 제각각 보내온 실적 파일, 이번 주 상신할 품의서, 수요일까지의 주간보고, 법인카드 영수증 더미. 시간의 눈으로 해부하면 직장인의 하루에서 **판단하는 시간**은 짧고, 옮기고 맞추고 붙여 넣는 손의 시간이 깁니다.
