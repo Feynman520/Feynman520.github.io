@@ -12,10 +12,10 @@ const totalRecipes = books.reduce((total, book) => total + book.data.recipes, 0)
   <section class="home-hero">
     <div class="shell hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">현직 교사가 쓴 AI 실전서</p>
+        <p class="eyebrow">직접 실행하고 검증한 AI 실전서</p>
         <h1>해결은 에이전트가,<br /><span>정의는 우리가.</span></h1>
         <p class="lead">
-          수업 준비부터 학교 행정까지. 현장에서 직접 실행하고 검증한 AI 활용법을
+          일과 생활의 현장에서 직접 실행하고 검증한 AI 활용법을
           책과 실습 자료로 나눕니다.
         </p>
         <div class="button-row">
@@ -63,7 +63,7 @@ const totalRecipes = books.reduce((total, book) => total + book.data.recipes, 0)
           <span class="section-label">BOOKS</span>
           <h2>현장에서 시작한 책</h2>
         </div>
-        <p>말로만 그럴듯한 기능보다, 교사의 하루에서 실제로 시간을 돌려주는 방법을 다룹니다.</p>
+        <p>말로만 그럴듯한 기능보다, 하루의 일에서 실제로 시간을 돌려주는 방법을 다룹니다.</p>
       </div>
 
       <div class="book-list">
@@ -144,13 +144,6 @@ const totalRecipes = books.reduce((total, book) => total + book.data.recipes, 0)
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-4.5-4.5M16 10l-4.5 4.5" /></svg>
         </a>
       </div>
-      <a class="qr-card" href="https://feynman520.github.io/card/" target="_blank" rel="noreferrer" aria-label="함세준 디지털 명함 새 창에서 열기">
-        <span class="qr-frame">
-          <img src="/digital-card-qr.png" alt="함세준 디지털 명함 QR 코드" width="444" height="444" loading="lazy" />
-        </span>
-        <strong>QR 스캔 → 디지털 명함</strong>
-        <small>feynman520.github.io/card</small>
-      </a>
     </div>
   </section>
 </Base>
@@ -219,12 +212,6 @@ const totalRecipes = books.reduce((total, book) => total + book.data.recipes, 0)
   .cta-panel p { max-width: 620px; margin-bottom: 0; color: #b9c0ce; }
   .cta-panel .button { flex: none; }
   .cta-copy .button { margin-top: 30px; }
-  .qr-card { position: relative; display: flex; flex: none; align-items: center; flex-direction: column; padding: 22px 22px 18px; border: 1px solid rgba(255,255,255,.14); border-radius: 20px; color: #fff; background: rgba(255,255,255,.08); text-align: center; text-decoration: none; transition: transform 180ms ease, background-color 180ms ease; }
-  .qr-card:hover { background: rgba(255,255,255,.12); transform: translateY(-3px); }
-  .qr-frame { display: block; width: 186px; padding: 12px; border-radius: 13px; background: #fff; }
-  .qr-frame img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
-  .qr-card strong { margin-top: 16px; font-size: 13px; letter-spacing: -.01em; }
-  .qr-card small { margin-top: 4px; color: #98a2b3; font-size: 10.5px; letter-spacing: .035em; }
 
   @media (max-width: 1000px) {
     .hero-grid { grid-template-columns: minmax(0, 1fr) 330px; gap: 46px; }

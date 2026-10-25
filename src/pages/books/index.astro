@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 const books = (await getCollection('books')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base title="책 — 함세준의 책" description="현장에서 직접 실행해 검증한 AI 실전서 전체 목록입니다.">
+<Base title="책 — 연구하는 HAM 쌤" description="현장에서 직접 실행해 검증한 AI 실전서 전체 목록입니다.">
   <section class="page-hero">
     <div class="shell narrow">
       <p class="eyebrow">BOOKS</p>

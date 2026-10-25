@@ -6,8 +6,8 @@ interface Props {
 }
 
 const {
-  title = '함세준의 책 — 교사를 위한 AI 실전서',
-  description = '현직 고등학교 교사가 쓰는 AI 에이전트 실전서와 실습 자료',
+  title = '연구하는 HAM 쌤 — AI 실전서와 실습 자료',
+  description = '직접 실행하고 검증한 AI 에이전트 실전서와 실습 자료',
   image = '/og-default.png',
 } = Astro.props;
 
@@ -19,7 +19,6 @@ const nav = [
   { href: '/books/', label: '책' },
   { href: '/downloads/', label: '자료실' },
   { href: '/updates/', label: '업데이트' },
-  { href: '/about/', label: '저자 소개' },
 ];
 
 const path = Astro.url.pathname;
@@ -40,7 +39,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     <meta property="og:url" content={canonicalURL} />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href={canonicalURL} />
-    <link rel="alternate" type="application/rss+xml" title="함세준의 책 — 업데이트" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="연구하는 HAM 쌤 — 업데이트" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
@@ -51,10 +50,10 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 
     <header class="site-header" data-header>
       <div class="shell header-inner">
-        <a class="brand" href="/" aria-label="함세준의 책 홈">
+        <a class="brand" href="/" aria-label="연구하는 HAM 쌤 홈">
           <img class="brand-avatar" src="/leader-avatar.png" alt="" width="430" height="430" />
           <span class="brand-copy">
-            <strong>HAM SEJUN</strong>
+            <strong>연구하는 HAM 쌤</strong>
             <small>BOOKS · RESOURCES</small>
           </span>
         </a>
@@ -93,18 +92,16 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div>
-          <a class="footer-brand" href="/">함세준의 책</a>
-          <p>현직 교사의 경험을 검증된 AI 실전 지식으로 정리합니다.</p>
+          <a class="footer-brand" href="/">연구하는 HAM 쌤</a>
+          <p>직접 실행해 검증한 AI 실전 지식을 책과 자료로 정리합니다.</p>
         </div>
         <div class="footer-links" aria-label="하단 메뉴">
           <a href="/downloads/">자료실</a>
           <a href="/updates/">업데이트</a>
-          <a href="/about/">저자 소개</a>
-          <a href="mailto:sejunham@gmail.com">문의</a>
         </div>
       </div>
       <div class="shell footer-bottom">
-        <span>© 2026 함세준</span>
+        <span>© 2026 연구하는 HAM 쌤</span>
         <span>실습 자료는 모두 가상 데이터입니다.</span>
       </div>
     </footer>

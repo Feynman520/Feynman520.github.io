@@ -14,8 +14,8 @@
 
 # 비서 에이전트 세팅가이드 (Claude 실행판)
 
-> 만든 사람: 함세준 (Sejun Ham) · 명함 https://feynman520.github.io/card/#home  
-> 허가서: MIT · © 2026 Sejun Ham — 이름 표기를 남기면 복사·수정·배포 자유  
+> 만든 사람: 연구하는 HAM 쌤  
+> 허가서: MIT · © 2026 연구하는 HAM 쌤 — 이름 표기를 남기면 복사·수정·배포 자유  
 > 버전: v14 · 2026-09-14 · Windows 전용  
 > 실행 주체: 이미 설치되고 로그인된 Claude Code  
 > 설계: 공통 영혼 본체는 Claude·Codex 중립, 최초 실행 절차만 Claude Code 전용  
