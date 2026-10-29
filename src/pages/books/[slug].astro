@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import InstallCode from '../../components/InstallCode.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -43,6 +44,7 @@ const { Content } = await render(book);
               <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3.5c-2.7 0-4.4 2-4.4 4.4 0 3.6-1.6 4.6-1.6 4.6h12s-1.6-1-1.6-4.6c0-2.4-1.7-4.4-4.4-4.4Zm-1.6 12a1.7 1.7 0 0 0 3.2 0" /></svg>
             </a>
           )}
+          <a class="button secondary" href="#install-code">설치 코드 복사</a>
           {book.data.downloads.length > 0 && (
             book.data.store.length > 0 ? (
               <a class="button secondary" href="#book-stores">구매처 보기</a>
@@ -57,6 +59,17 @@ const { Content } = await render(book);
           <div><dt>자료 갱신</dt><dd>{book.data.updated}</dd></div>
         </dl>
       </div>
+    </div>
+  </section>
+
+  <section class="page-section" id="install-code">
+    <div class="shell content-grid">
+      <div class="content-heading">
+        <span class="section-label">INSTALL</span>
+        <h2>클로드코드 <br />설치 코드</h2>
+        <p>책 3-1 '클로드코드 설치하기' 2단계의 설치 명령입니다. 전자책에서는 복사가 막혀 있으니 여기서 [복사] 버튼으로 가져가세요.</p>
+      </div>
+      <InstallCode />
     </div>
   </section>
 

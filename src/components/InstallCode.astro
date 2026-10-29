@@ -1,0 +1,132 @@
+---
+// 책 3-1 '클로드코드 설치하기' 2단계의 설치 명령. 22권 원고와 글자 하나까지 같아야 한다.
+// 전자책은 DRM 때문에 복사가 막히므로, 독자는 이 칸에서 복사한다.
+const windowsCode = String.raw`Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force; irm https://claude.ai/install.ps1 | iex; $bin="$env:USERPROFILE\.local\bin"; $p=[Environment]::GetEnvironmentVariable("Path","User"); if($p -notlike "*$bin*"){[Environment]::SetEnvironmentVariable("Path",($p.TrimEnd(';')+";"+$bin),"User")}; $env:Path+=";$bin"; claude --version`;
+const macCode = String.raw`curl -fsSL https://claude.ai/install.sh | bash`;
+
+const items = [
+  {
+    id: 'windows',
+    os: 'Windows',
+    title: '윈도우: 파워셸에 붙여 넣기',
+    steps: [
+      '시작 메뉴에서 PowerShell을 검색합니다.',
+      '결과 위에서 마우스 오른쪽 버튼 → "관리자 권한으로 실행"을 고릅니다.',
+      '아래 [복사] 버튼을 누른 뒤, 파워셸 창에서 마우스 오른쪽 버튼(또는 Ctrl+V)으로 붙여 넣고 Enter를 누릅니다.',
+      '맨 아래에 버전 번호(예: 2.1.245 (Claude Code))가 보이면 설치 끝입니다.',
+    ],
+    code: windowsCode,
+  },
+  {
+    id: 'mac',
+    os: 'Mac',
+    title: 'Mac: 터미널에 붙여 넣기',
+    steps: ['응용 프로그램 → 유틸리티 → 터미널을 엽니다.', '아래 [복사] 버튼을 누른 뒤 터미널에 붙여 넣고(⌘+V) Enter를 누릅니다.'],
+    code: macCode,
+  },
+];
+---
+
+<div class="install-list">
+  {items.map((item) => (
+    <div class="install-item" id={`install-${item.id}`}>
+      <div class="install-head">
+        <span class="install-os">{item.os}</span>
+        <strong>{item.title}</strong>
+      </div>
+      <ol class="install-steps">
+        {item.steps.map((step) => <li>{step}</li>)}
+      </ol>
+      <div class="install-code">
+        <pre><code>{item.code}</code></pre>
+        <button class="install-copy" type="button" data-copy={item.code} aria-label={`${item.os} 설치 코드 복사`}>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="7" width="9.5" height="9.5" rx="2" /><path d="M13 7V5a1.5 1.5 0 0 0-1.5-1.5h-6A1.5 1.5 0 0 0 4 5v6.5A1.5 1.5 0 0 0 5.5 13H7" /></svg>
+          <span>복사</span>
+        </button>
+      </div>
+    </div>
+  ))}
+  <p class="install-note">
+    <strong>주의</strong> 검은 창이 <b>명령 프롬프트(cmd)</b>가 아니라 <b>PowerShell</b>인지 확인하세요. 빨간 오류가 쏟아지면 창을 닫고 "관리자 권한으로 실행"부터 다시 합니다. 버전 번호가 안 보이면 파워셸을 새로 열고 <code>claude --version</code>만 입력해 보세요. 회사·사무소 컴퓨터는 보안 프로그램이나 방화벽 때문에 설치가 막힐 수 있으니 전산 담당자와 먼저 상의하세요.
+  </p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.install-copy').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const text = button.dataset.copy ?? '';
+      const label = button.querySelector('span');
+      let ok = false;
+      try {
+        await navigator.clipboard.writeText(text);
+        ok = true;
+      } catch {
+        // 클립보드 권한이 없는 브라우저: 숨은 입력칸으로 복사
+        const area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        try { ok = document.execCommand('copy'); } catch { ok = false; }
+        area.remove();
+      }
+      if (label) label.textContent = ok ? '복사됨' : '직접 선택해 복사';
+      button.classList.toggle('done', ok);
+      window.setTimeout(() => {
+        if (label) label.textContent = '복사';
+        button.classList.remove('done');
+      }, 2200);
+    });
+  });
+</script>
+
+<style>
+  .install-list { display: grid; gap: 16px; }
+  .install-item { padding: 22px 24px; border: 1px solid var(--line); border-radius: 15px; background: #fff; }
+  .install-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .install-head strong { color: var(--ink); font-size: 15.5px; }
+  .install-os { padding: 3px 9px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); font-size: 11.5px; font-weight: 800; }
+  .install-steps { margin: 0 0 14px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+  .install-code { position: relative; }
+  .install-code pre {
+    margin: 0;
+    padding: 16px 18px 56px;
+    border-radius: 12px;
+    background: #111827;
+    color: #e5e7eb;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-all;
+    user-select: all;
+  }
+  /* 한국어 윈도우의 기본 고정폭 글꼴(돋움체 등)은 \ 를 ₩ 로 그리므로 라틴 고정폭 글꼴만 쓴다 */
+  .install-code pre, .install-code code, .install-note code {
+    font-family: Consolas, 'Cascadia Mono', 'Courier New', Menlo, Monaco, ui-monospace;
+  }
+  .install-copy {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--brand);
+    color: #fff;
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .install-copy:hover { background: var(--brand-dark); }
+  .install-copy.done { background: #0e8345; }
+  .install-copy svg { width: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .install-note { margin: 4px 4px 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+  .install-note strong { margin-right: 6px; color: #b42318; }
+  .install-note code { padding: 1px 6px; border-radius: 6px; background: var(--brand-soft); color: var(--ink); font-size: 12.5px; }
+</style>

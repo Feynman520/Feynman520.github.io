@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import InstallCode from '../components/InstallCode.astro';
+---
+
+<Base title="클로드코드 설치 코드 — 연구하는 HAM 쌤" description="'○○을 위한 클로드코드' 시리즈 3-1 '클로드코드 설치하기'의 설치 명령을 복사할 수 있습니다.">
+  <section class="page-hero">
+    <div class="shell narrow">
+      <p class="eyebrow">INSTALL</p>
+      <h1>클로드코드<br />설치 코드</h1>
+      <p class="lead">'○○을 위한 클로드코드' 시리즈 모든 권의 3-1 '클로드코드 설치하기' 2단계 명령입니다. 전자책에서는 복사가 막혀 있으니, 이 페이지의 [복사] 버튼으로 가져가 붙여 넣으세요.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="shell install-page">
+      <InstallCode />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .install-page { max-width: 880px; }
+</style>
